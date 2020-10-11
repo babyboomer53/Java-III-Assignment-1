@@ -68,5 +68,5 @@ public class BaseConversions {
         else
             return (int) c - 'A' + 10;
     }
-
+    
 }

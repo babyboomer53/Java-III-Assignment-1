@@ -43,10 +43,10 @@ class Menu implements ActionListener {
         this.panel.add(decimalToHex);
         this.panel.add(decimalToBinary);
         this.frame.add(panel);
-        this.frame.setLocationRelativeTo(null);
         this.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.panel.setBackground(CYAN);
         this.frame.pack();
+        this.frame.setLocationRelativeTo(null);
         this.frame.setVisible(true);
     }
 
