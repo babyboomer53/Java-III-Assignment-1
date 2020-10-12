@@ -3,6 +3,7 @@ package edu.ucsd.myextension;
 public class BaseConversions {
 
     static String baseToBase(String num, int base1, int base2) {
+        if (Integer.parseInt(num) == 0) return num + " (zero)";
         long no = convFrmBaseToDeci(num, base1);
         return convFrmDecToBase(no, base2);
     }
@@ -68,5 +69,5 @@ public class BaseConversions {
         else
             return (int) c - 'A' + 10;
     }
-    
+
 }
