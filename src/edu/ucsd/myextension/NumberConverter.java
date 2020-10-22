@@ -18,7 +18,8 @@ class Menu implements ActionListener {
     private JButton hexToDecimal;
     private JButton decimalToHex;
     private JButton decimalToBinary;
-
+    private JButton octalToBinary;
+    private JButton octalToDecimal;
 
     Menu(String number) {
         this.number = number.toUpperCase();
@@ -36,12 +37,18 @@ class Menu implements ActionListener {
         decimalToHex.addActionListener(this::actionPerformed);
         decimalToBinary = new JButton("Decimal to Binary");
         decimalToBinary.addActionListener(this::actionPerformed);
+        octalToBinary = new JButton("Octal to Binary");
+        octalToBinary.addActionListener(this::actionPerformed);
+        octalToDecimal = new JButton("Octal to Decimal");
+        octalToDecimal.addActionListener(this::actionPerformed);
         this.panel.add(binaryToHex);
         this.panel.add(binaryToDecimal);
         this.panel.add(hexToBinary);
         this.panel.add(hexToDecimal);
         this.panel.add(decimalToHex);
         this.panel.add(decimalToBinary);
+        this.panel.add(octalToBinary);
+        this.panel.add(octalToDecimal);
         this.frame.add(panel);
         this.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.panel.setBackground(CYAN);
@@ -69,6 +76,12 @@ class Menu implements ActionListener {
                     INFORMATION_MESSAGE);
         } else if (actionEvent.getSource() == decimalToBinary) {
             showMessageDialog(null, Decimal.convertToBinary(number), "The binary equivalent is…",
+                    INFORMATION_MESSAGE);
+        } else if (actionEvent.getSource() == octalToBinary) {
+            showMessageDialog(null, Octal.convertToBinary(number), "The binary equivalent is…",
+                    INFORMATION_MESSAGE);
+        } else if (actionEvent.getSource() == octalToDecimal) {
+            showMessageDialog(null, Octal.convertToDecimal(number), "The binary equivalent is…",
                     INFORMATION_MESSAGE);
         }
 
