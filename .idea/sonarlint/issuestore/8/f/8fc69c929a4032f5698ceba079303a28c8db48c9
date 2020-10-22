@@ -1,19 +1,20 @@
 
-9
-java:S1643 "Use a StringBuilder instead.(§€ğå8éİÜ‰Ğ.
 >
-java:S1643"Use a StringBuilder instead.(÷“šøÿÿÿÿ8éİÜ‰Ğ.
+java:S1643"Use a StringBuilder instead.(÷“šøÿÿÿÿ8éİÜ‰Ğ.
 >
-java:S1643"Use a StringBuilder instead.(İàÂıøÿÿÿÿ8éİÜ‰Ğ.
->
-java:S1643"Use a StringBuilder instead.(ë—Ã©üÿÿÿÿ8éİÜ‰Ğ.
+java:S1643"Use a StringBuilder instead.(İàÂıøÿÿÿÿ8éİÜ‰Ğ.
 8
-java:S1643"Use a StringBuilder instead.(ˆÚ°8éİÜ‰Ğ.
+java:S1643"Use a StringBuilder instead.(ˆÚ°8éİÜ‰Ğ.
 \
 java:S1118":Add a private constructor to hide the implicit public one.( ÍÚÔüÿÿÿÿ8ò§åŸÑ.
 >
-java:S1643"Use a StringBuilder instead.(ÌÈæµùÿÿÿÿ8éİÜ‰Ğ.
+java:S1643"Use a StringBuilder instead.(ÌÈæµùÿÿÿÿ8éİÜ‰Ğ.
 9
-java:S1643"Use a StringBuilder instead.(ë­ãé8éİÜ‰Ğ.
+java:S1643"Use a StringBuilder instead.(ë­ãé8éİÜ‰Ğ.
 9
-java:S1643""Use a StringBuilder instead.(§€ğå8éİÜ‰Ğ.
+java:S1643!"Use a StringBuilder instead.(§€ğå8éİÜ‰Ğ.
+>
+java:S1643"Use a StringBuilder instead.(ë—Ã©üÿÿÿÿ8éİÜ‰Ğ.
+9
+java:S1643#"Use a StringBuilder instead.(§€ğå8éİÜ‰Ğ.
+]	java:S125"<This block of commented-out lines of code should be removed.(Ü”îûÿÿÿÿ8¡ú¨öÔ.

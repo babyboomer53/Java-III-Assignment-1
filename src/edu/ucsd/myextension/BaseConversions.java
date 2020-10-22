@@ -3,15 +3,16 @@ package edu.ucsd.myextension;
 public class BaseConversions {
 
     static String baseToBase(String num, int base1, int base2) {
-        if (Integer.parseInt(num) == 0) return num + " (zero)";
-        long no = convFrmBaseToDeci(num, base1);
-        return convFrmDecToBase(no, base2);
+
+        int no = convFrmBaseToDeci(num, base1);
+        String returnValue = convFrmDecToBase(no, base2);
+        return returnValue;
     }
 
-    static String convFrmDecToBase(long dividend, int base) {
+    static String convFrmDecToBase(int dividend, int base) {
 
         String result = "";
-        long remainder;
+        int remainder;
         // Convert input number is given base by repeatedly
         // dividing it by base and taking remainder
         while (dividend > 0) {
@@ -37,7 +38,17 @@ public class BaseConversions {
             dividend /= base;
         }
         // Reverse the result
-        return new StringBuffer(result).reverse().toString();
+        if (result.isEmpty() && dividend == 0) {
+            return "0";
+        } else if (dividend != 0) {
+            if (result.isEmpty()) {
+                return "Invalid conversion!";
+            } else {
+                return new StringBuffer(result).reverse().toString();
+            }
+        } else {
+            return new StringBuffer(result).reverse().toString();
+        }
     }
 
     static int convFrmBaseToDeci(String num, int base) {
