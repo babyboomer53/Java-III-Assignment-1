@@ -8,6 +8,9 @@ import static java.awt.Color.BLACK;
 import static java.awt.Color.CYAN;
 import static javax.swing.JOptionPane.*;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 class Menu implements ActionListener {
     private String number;
     private JFrame frame;
@@ -92,6 +95,13 @@ public class NumberConverter {
     public static String number;
 
     public static void main(String[] arguments) {
+//        Pattern pattern = Pattern.compile("^[0-9A-F]+$", Pattern.CASE_INSENSITIVE);
+//        Matcher matcher = pattern.matcher("ffae");
+//        if (matcher.find()) {
+//            System.out.println("The input is valid.");
+//        } else {
+//            System.err.println("The input is not valid.");
+//        }
 
         number = showInputDialog("Enter a binary, decimal or hexadecimal number…");
 
